@@ -263,10 +263,10 @@
 
     <footer class="footer">
       <div class="social">
-        <a href="https://github.com/King-of-Demon"><i class="fa-brands fa-github"></i></a>
-        <a href="https://wa.link/kdl688"><i class="fa-brands fa-whatsapp"></i></a>
-        <a href="https://www.instagram.com/_staycalm7/"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.facebook.com/ripai.permai"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://github.com/King-of-Demon" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://wa.link/kdl688" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/_staycalm7/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/ripai.permai" target="_blank"><i class="fa-brands fa-facebook"></i></a>
         <a href="#"><i class="fa-brands fa-youtube"></i></a>
       </div>
       <ul class="list">
@@ -283,24 +283,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
   <script src="asset/serah.js"></script>
-  <script>
-    document.querySelectorAll('nav a').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            
-            document.querySelectorAll('nav a').forEach(link => {
-                link.classList.remove('active');
-            });
-            
-            this.classList.add('active');
-            
-            const targetId = this.getAttribute('href').substring(1);
-            const targetElement = document.getElementById(targetId);
-
-            targetElement.scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
-</script>
+  <script src="asset/java.js"></script>
 </html>
